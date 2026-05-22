@@ -1,5 +1,5 @@
 import { Stack } from 'expo-router';
-import { Platform, View, StyleSheet } from 'react-native';
+import { Platform, View, StyleSheet, ViewStyle } from 'react-native';
 import { useEffect } from 'react';
 import { useUserStore } from '@/store/user-store';
 
@@ -53,14 +53,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     borderWidth: 8,
     borderColor: '#1E2025',
-    // Realistic shadow for modern glassmorphism vibe
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 24 },
-    shadowOpacity: 0.5,
-    shadowRadius: 40,
-    // Support shadow on web browsers
-    // @ts-ignore
     boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
-    paddingBottom: 20, // Add bottom padding to push the entire stack and tab bar up
+    paddingBottom: 20,
   },
 });
